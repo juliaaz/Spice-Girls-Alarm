@@ -16,4 +16,58 @@ def generating_data():
                          "Examples/8", "Examples/9"] if
                         row[example] != ""]
             data[row["Word"]].append(examples)
-    return data[random.choice(list(data.keys()))]
+    key = random.choice(list(data.keys()))
+    data = data[key]
+    return [key] + data
+
+def quize_definitions():
+    data_1 = generating_data()
+    word_correct = data_1[0]
+    words = [generating_data()[0], generating_data()[0], word_correct]
+    words = random.sample(words, len(words))
+    words_str = '| '
+    for word in words:
+        words_str += word + ' | '
+    print('Print the correct word for this definition:' + f'\n"{data_1[1]}"')
+    print(f"\nChoose among: {words_str}")
+    word_input = str(input("\nYour answer: "))
+    if word_input == word_correct:
+        return True
+    else:
+        return False
+
+def quize_exampes():
+    data_1 = generating_data()
+    word_correct = data_1[0]
+    words = [generating_data()[0], generating_data()[0], word_correct]
+    words = random.sample(words, len(words))
+    words_str = '| '
+    for word in words:
+        words_str += word + ' | '
+    sentence = random.choice(data_1[2]).lower().replace(word_correct.lower(),
+                                                        '_________').capitalize()
+    print('Put in the correct word into the sentence:' + f'\n"{sentence}"')
+    print(f"\nChoose among: {words_str}")
+    word_input = str(input("\nYour answer: "))
+    if word_input == word_correct:
+        return True
+    else:
+        return False
+
+def choosing_quiz():
+    num = random.randint(0,1)
+    if num == 0:
+        return quize_exampes()
+    else:
+        return quize_definitions()
+
+def generating_quiz():
+    for _ in range(3):
+        res = choosing_quiz()
+        if res == False:
+            return False
+    return True
+
+
+if __name__ == "__main__":
+    print(generating_quiz())
