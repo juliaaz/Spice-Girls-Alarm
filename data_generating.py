@@ -73,7 +73,7 @@ def choosing_quiz():
 
 def generating_quiz():
     """Generating the whole quize process."""
-    for _ in range(3):
+    for _ in range(2):
         res = choosing_quiz()
         if res == False:
             return False
