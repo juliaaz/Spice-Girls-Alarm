@@ -30,7 +30,7 @@ User gets an app to set an alarm and wake up a great spicy song 'Wannabe' by Spi
 
 Exersices for learning English:
 
-![text](bot_exersices.png?raw=true "text")
+![text](tasks.png?raw=true "text")
 
 Main app for setting an alarm:
 
