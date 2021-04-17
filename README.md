@@ -28,7 +28,9 @@ User gets an app to set an alarm and wake up a great spicy song 'Wannabe' by Spi
 
 This is the QR code to open Telegram bot:
 ![text](code.png?raw=true "text")
+
 Exersices for leaning English:
 ![text](exersices.png?raw=true "text")
+
 Main app for setting an alarm:
 ![text](alarm.png?raw=true "text")
