@@ -24,9 +24,8 @@ This is how the main page looks like. Here the user can stop a bot or start lear
 ![text](botstart.png?raw=true "text")
 
 ## Result
-User gets an app to set an alarm and wake up a great spicy song 'Wannabe' by Spice Girls. Telegram bot for learning English is also available for the user by QR code below.
+User gets an app to set an alarm and wake up a great spicy song 'Wannabe' by Spice Girls. Telegram bot for learning English is also available for the user by QR code below. This is the QR code to open Telegram bot:
 
-This is the QR code to open Telegram bot:
 ![text](code.png?raw=true "text")
 
 Exersices for leaning English:
